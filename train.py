@@ -280,7 +280,7 @@ def train_model(args):
 if __name__ == '__main__':
     start = timeit.default_timer()
     parser = ArgumentParser()
-    parser.add_argument('--model', default="DABNet", help="model name: Context Guided Network (CGNet)")
+    parser.add_argument('--model', default="FDDWNet", help="model name")
     parser.add_argument('--dataset', default="cityscapes", help="dataset: cityscapes or camvid")
     parser.add_argument('--train_type', type=str, default="train",
                         help="ontrain for training on train set, ontrainval for training on train+val set")
