@@ -1,7 +1,6 @@
 import time
 import torch
 import torch.backends.cudnn as cudnn
-
 from argparse import ArgumentParser
 from builders.model_builder import build_model
 
