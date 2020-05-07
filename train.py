@@ -152,8 +152,6 @@ def train_model(args):
         min_kept = int(args.batch_size // len(args.gpus) * h * w // 16)
         criteria = ProbOhemCrossEntropy2d(use_weight=True, ignore_label=ignore_label,
                                           thresh=0.7, min_kept=min_kept)
-    #elif args.dataset == 'cityscapes' and args.use_focal:
-        #criteria = FocalLoss2d(weight=weight, ignore_label=ignore_label)
     else:
         raise NotImplementedError(
             "This repository now supports two datasets: cityscapes and camvid, %s is not included" % args.dataset)
