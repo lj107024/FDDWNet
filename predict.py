@@ -5,7 +5,6 @@ import numpy as np
 import torch.backends.cudnn as cudnn
 from torch.autograd import Variable
 from argparse import ArgumentParser
-# user
 from builders.model_builder import build_model
 from builders.dataset_builder import build_dataset_test
 from utils.utils import save_predict
